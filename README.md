@@ -62,7 +62,8 @@ olist-sql-project/
 
 The schema follows a **star schema** design with `orders` as the central fact table connected to dimension tables via foreign keys.
 
-> 📸 *(Add your ERD screenshot here)*
+<img width="903" height="1198" alt="er" src="https://github.com/user-attachments/assets/36480387-eecb-46c2-b34a-344c8e7eae67" />
+
 
 ### Relationships
 - `orders` → `customers` (customer_id)
