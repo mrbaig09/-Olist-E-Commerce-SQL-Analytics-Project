@@ -161,7 +161,7 @@ The schema follows a **star schema** design with `orders` as the central fact ta
 ---
 
 ## 👨‍💻 Author
-**Ramiz**
+**Beig Ramiz**
 Data Engineer | 2+ Years Experience
 - 📧 ramizbeigx@gmail.com
-- 💼 [LinkedIn](https://www.linkedin.com/in/ramiz-beig/))
+- 💼 [LinkedIn](https://www.linkedin.com/in/ramiz-beig/)
