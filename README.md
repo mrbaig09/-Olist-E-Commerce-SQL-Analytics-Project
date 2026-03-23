@@ -76,6 +76,36 @@ The schema follows a **star schema** design with `orders` as the central fact ta
 
 ---
 
+## 🧹 Data Cleaning & Quality Fixes
+
+Before analysis, the following data quality issues were identified and fixed:
+
+### 1. Invalid DateTime Values
+MySQL 8.0 strict mode rejected `0000-00-00 00:00:00` values in the orders table.
+Replaced all zero dates with NULL across 4 columns:
+
+- `order_approved_at` → 160 rows fixed
+- `order_delivered_carrier_date` → 1,783 rows fixed  
+- `order_delivered_customer_date` → 2,965 rows fixed
+- `order_estimated_delivery_date` → 0 rows (already clean)
+
+### 2. Missing Reference Data
+3 product category names in the `products` table had no matching
+record in `product_category_translation`:
+- `pc_gamer`
+- `portateis_cozinha_e_preparadores_de_alimentos`
+- Empty string values
+
+**Fix:** Inserted missing categories manually into the translation table
+to maintain referential integrity and enable the FK constraint.
+
+### 3. Duplicate Table Cleanup
+MySQL Workbench Import Wizard created a duplicate `olist_customers_dataset` 
+table alongside the proper `customers` table.
+Dropped the duplicate to keep the schema clean.
+
+---
+
 ## 📊 Key Analyses
 
 ### 1. Business Overview
