@@ -168,5 +168,5 @@ SOURCE analysis/01_business_overview.sql;
 ## 👨‍💻 Author
 **Ramiz**
 Data Engineer | 2+ Years Experience
-- 📧 beigramizx@gmail.com.com
+- 📧 ramizbeigx@gmail.com.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/ramiz-beig/)
