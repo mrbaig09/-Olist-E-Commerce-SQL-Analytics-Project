@@ -141,12 +141,6 @@ The schema follows a **star schema** design with `orders` as the central fact ta
 5. Run `schema/02_add_keys.sql` to add Primary Keys and Foreign Keys
 6. Run any analysis file from the `analysis/` folder
 
-```sql
--- Quick start
-USE olist_db;
-SOURCE analysis/01_business_overview.sql;
-```
-
 ---
 
 ## 💡 SQL Concepts Demonstrated
@@ -170,4 +164,4 @@ SOURCE analysis/01_business_overview.sql;
 **Ramiz**
 Data Engineer | 2+ Years Experience
 - 📧 ramizbeigx@gmail.com
-- 💼 [LinkedIn]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/ramiz-beig/))
+- 💼 [LinkedIn](https://www.linkedin.com/in/ramiz-beig/))
