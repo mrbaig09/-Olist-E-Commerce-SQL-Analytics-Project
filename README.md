@@ -136,10 +136,10 @@ The schema follows a **star schema** design with `orders` as the central fact ta
 
 1. Install **MySQL 8.0** and **MySQL Workbench**
 2. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-3. Run `schema/01_create_tables.sql` to create all tables
+3. Run `01_create_tables.sql` to create all tables
 4. Load CSV files using `LOAD DATA LOCAL INFILE` or MySQL Workbench Import Wizard
-5. Run `schema/02_add_keys.sql` to add Primary Keys and Foreign Keys
-6. Run any analysis file from the `analysis/` folder
+5. Run `02_add_keys.sql` to add Primary Keys and Foreign Keys
+6. Run any analysis file from the `03_all_analyses.sql` folder
 
 ---
 
