@@ -1,6 +1,5 @@
 -- ═══════════════════════════════════════════════════════
--- FILE: 01_business_overview.sql
--- DESC: High level business metrics
+-- High level business metrics
 -- ═══════════════════════════════════════════════════════
 
 USE olist_db;
@@ -41,8 +40,7 @@ LIMIT 10;
 
 
 -- ═══════════════════════════════════════════════════════
--- FILE: 02_delivery_performance.sql
--- DESC: Delivery time and late order analysis
+--  Delivery time and late order analysis
 -- ═══════════════════════════════════════════════════════
 
 -- 1. Average Delivery Time by State
@@ -102,8 +100,7 @@ LIMIT 10;
 
 
 -- ═══════════════════════════════════════════════════════
--- FILE: 03_seller_performance.sql
--- DESC: Seller ranking and performance metrics
+-- FILE: Seller ranking and performance metrics
 -- ═══════════════════════════════════════════════════════
 
 -- 1. Top 10 Sellers by Revenue
@@ -181,8 +178,7 @@ ORDER BY total_revenue DESC;
 
 
 -- ═══════════════════════════════════════════════════════
--- FILE: 04_rfm_segmentation.sql
--- DESC: RFM customer segmentation
+-- RFM customer segmentation
 -- ═══════════════════════════════════════════════════════
 
 WITH rfm_base AS (
@@ -229,8 +225,7 @@ ORDER BY total_revenue DESC;
 
 
 -- ═══════════════════════════════════════════════════════
--- FILE: 05_product_analysis.sql
--- DESC: Product category revenue and MoM growth
+-- Product category revenue and MoM growth
 -- ═══════════════════════════════════════════════════════
 
 -- 1. Top 10 Product Categories by Revenue
@@ -316,8 +311,7 @@ ORDER BY category, month;
 
 
 -- ═══════════════════════════════════════════════════════
--- FILE: 06_payment_analysis.sql
--- DESC: Payment type and order value analysis
+-- Payment type and order value analysis
 -- ═══════════════════════════════════════════════════════
 
 -- 1. Revenue by Payment Type
@@ -378,8 +372,7 @@ ORDER BY MIN(order_value);
 
 
 -- ═══════════════════════════════════════════════════════
--- FILE: 07_cohort_analysis.sql
--- DESC: Customer retention cohort analysis
+-- Customer retention cohort analysis
 -- ═══════════════════════════════════════════════════════
 
 WITH first_purchase AS (
